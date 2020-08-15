@@ -23,6 +23,8 @@
 				margin: 0px 0px 45px 0px;
 				padding: 13px 0px 0px 65px;
 				position: relative;
+				color: #ccffff;
+				font-size: 0.9em;
 			}
 			ol.cities li::before{content: counter(myCounter , decimal-leading-zero);
 			display: inline-block;
@@ -38,6 +40,22 @@
 			left: -40px;
 			border-radius: 5px;
 			}
+			ol.cities li em{
+				display: block;
+				font-family: 'roboto' , sans-serif;
+				letter-spacing: 0.3em;
+				text-transform: uppercase;
+				color: #fff;
+				margin: 0px 0px -5px 0px;
+			}
+			ol.cities li strong{
+				display: block;
+				margin: 0px ;
+				font-family: 'roboto slab' , serif;
+				font-weight: 900;
+				font-size: 1.3em;
+				color:#fff;
+			}
 		</style>
 
 	</head>
@@ -49,11 +67,11 @@
 		</header>
 
 		<ol class="cities">
-			<li>China, Shanghai<br>Population: City 21,516,000 // Urban 21,009,000 // Metro 21,148,000</li>
-			<li>China, Beijing<br>Population: City 21,516,000 // Urban 21,009,000 // Metro 21,148,000</li>
-			<li>Brazil, S&acirc;o Paulo<br>Population: City 21,292,893 // Urban 20,365,000 // Metro 36,842,102</li>
-			<li>India, Delhi<br>Population: City 16,787,941 // Urban 24,998,000 // Metro 21,753,486</li>
-			<li>Pakistan, Karachi<br>Population: City 21,000,000 // Urban 22,123,000</li>
+			<li><em>China</em> <strong>Shanghai</strong> Population: City 21,516,000 // Urban 21,009,000 // Metro 21,148,000</li>
+			<li><em>China</em> <strong>Beijing</strong> Population: City 21,516,000 // Urban 21,009,000 // Metro 21,148,000</li>
+			<li><em>Brazil</em> <strong>S&acirc;o Paulo</strong> Population: City 21,292,893 // Urban 20,365,000 // Metro 36,842,102</li>
+			<li><em>India</em> <strong>Delhi</strong> Population: City 16,787,941 // Urban 24,998,000 // Metro 21,753,486</li>
+			<li><em>Pakistan</em> <strong>Karachi</strong> Population: City 21,000,000 // Urban 22,123,000</li>
 		</ol>
 
 		<p class="source">Source: <a href="https://en.wikipedia.org/wiki/World%27s_largest_cities">https://en.wikipedia.org/wiki/World%27s_largest_cities</a></p>
