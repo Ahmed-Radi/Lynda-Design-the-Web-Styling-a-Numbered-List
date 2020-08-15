@@ -12,20 +12,43 @@
 			header p { line-height: 20px; font-size: 1.2em; margin: 0; padding: 0px 30px 15px 30px; color: rgba(255,255,255,.6); }
 			p.source { font-size: .8em; font-style: italic; margin: 0 0 0 30px; color: rgba(255,255,255,.5); }
 			p.source a { color: rgba(255,255,255,.75); padding-left: 7px; }
-			
-			/* New CSS here */
 
+			/* New CSS here */
+			ol.cities{
+				list-style-type:none;
+				margin: 0px 0px 0px 30px;
+			}
+			ol.cities li{
+				counter-increment: myCounter ;
+				margin: 0px 0px 45px 0px;
+				padding: 13px 0px 0px 65px;
+				position: relative;
+			}
+			ol.cities li::before{content: counter(myCounter , decimal-leading-zero);
+			display: inline-block;
+			text-align: center;
+			font-size: 4em;
+			background-color: #fff;
+			color: #0099cc;
+			font-family: 'roboto' , sans-serif;
+			font-weight: 900;
+			padding: 10px;
+			position: absolute;
+			top:0px;
+			left: -40px;
+			border-radius: 5px;
+			}
 		</style>
-		
+
 	</head>
-		
+
 	<body>
 		<header>
 			<h1>top 5 largest cities</h1>
 			<p>These are the top 5 cities in the world as defined by their city proper, urban area, and the metropolitan region.</p>
 		</header>
 
-		<ol>
+		<ol class="cities">
 			<li>China, Shanghai<br>Population: City 21,516,000 // Urban 21,009,000 // Metro 21,148,000</li>
 			<li>China, Beijing<br>Population: City 21,516,000 // Urban 21,009,000 // Metro 21,148,000</li>
 			<li>Brazil, S&acirc;o Paulo<br>Population: City 21,292,893 // Urban 20,365,000 // Metro 36,842,102</li>
@@ -33,6 +56,6 @@
 			<li>Pakistan, Karachi<br>Population: City 21,000,000 // Urban 22,123,000</li>
 		</ol>
 
-		<p class="source">Source: <a href="https://en.wikipedia.org/wiki/World%27s_largest_cities">https://en.wikipedia.org/wiki/World%27s_largest_cities</a></p>	
+		<p class="source">Source: <a href="https://en.wikipedia.org/wiki/World%27s_largest_cities">https://en.wikipedia.org/wiki/World%27s_largest_cities</a></p>
 	</body>
 </html>
